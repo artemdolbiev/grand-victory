@@ -1,41 +1,19 @@
+
 @import "mixins-media";
 
+
 // Подключаем шрифты -------------------------------------------------------------------------------------------------------------------
-// @import "fonts";
+@import "fonts";
 // &display=swap - добавить при подключении
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-
-
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:regular,500,600&display=swap);
 
 // Шрифты по умолчанию ----------------------------------------------------------------------------------------------------------------
-$fontFamily: "";
+$fontFamily: "Montserrat Alternates";
 $fontSize: rem(20); // где 20(рх) - размер шрифта по умолчанию из макета
 
 // Основные цвета ---------------------------------------------------------------------------------------------------------------------
 @import "skin";
-
-// Настройки -------------------------------------------------------------------------------------------------------------------------
-// Минимальная шрина страницы
-$minWidth: 320;
-
-//Ширина полотна (макета)
-$maxWidth: 1920;
-
-// Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1370;
-// Общий отступ у контейнера
-// (30 = 15рх слева и справа, 0 = нет отступа)
-$containerPadding: 30;
-
-// Стили будут применятся ко всем классам содержащие *__container
-[class*="__container"] {
-  max-width: rem($maxWidthContainer);
-  box-sizing: content-box;
-  margin: 0 auto;
-  padding: 0 rem($containerPadding, 2);
-}
 
 // Брейк-поинт
 @import "variables";

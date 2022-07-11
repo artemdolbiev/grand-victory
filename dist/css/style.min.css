@@ -6,12 +6,55 @@
 /* sm */
 /* xs */
 /* xx */
-@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-[class*=__container] {
-  max-width: rem(1370);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:regular,500,600&display=swap);
+@font-face {
+  font-family: FoglihtenNo06_076;
+  font-display: swap;
+  src: url("../fonts/FoglihtenNo06_076.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1370px;
   box-sizing: content-box;
   margin: 0 auto;
-  padding: 0 rem(30, 2);
+  padding: 0px 15px;
 }
 
 .icon-menu {
